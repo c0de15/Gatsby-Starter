@@ -6,11 +6,9 @@
  */
 
 import React, { ReactNode } from 'react'
-import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import Header from '../header'
-import './layout.module.css'
+import Header from '../Header'
 
 const Layout = ({ children }: { children: ReactNode }) => {
   const data = useStaticQuery(graphql`
@@ -43,10 +41,6 @@ const Layout = ({ children }: { children: ReactNode }) => {
       </div>
     </>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout
