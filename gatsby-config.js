@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Gatsby Typescript Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `Steven Gilliam <steve@steveg.dev>`,
   },
@@ -28,7 +28,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-typescript`,
-    `gatsby-plugin-sass`
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        data: '@import "../styles/variables.scss";',
+        includePaths: ['src/components'],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
