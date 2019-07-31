@@ -1,0 +1,75 @@
+@import './fonts.scss';
+@import './mixins.scss';
+
+// Typography
+$base-font: 'Lato', sans-serif;
+$heading-font: 'Lato', serif;
+
+/* set base values */
+$text-base-size: 1em;
+$text-scale-ratio: 1.2;
+
+/* type scale */
+$text-xs: 1em / (2 * $text-scale-ratio);
+$text-sm: 1em / $text-scale-ratio;
+$text-md: 1em * $text-scale-ratio;
+$text-lg: 1em * (2 * $text-scale-ratio);
+$text-xl: 1em * (3 * $text-scale-ratio);
+$text-xxl: 1em * (4 * $text-scale-ratio);
+$text-xxxl: 1em * (5 * $text-scale-ratio);
+
+@include breakpoint(md) {
+  :root {
+    $text-base-size: 1.25em;
+    $text-scale-ratio: 1.25;
+  }
+}
+
+// Colors
+/* Main Colors */
+$primary: #303841;
+$secondary: #f3f3f3;
+
+/* Shades */
+$black: #1d1d21;
+$gray-10: #2e2e31;
+$gray-6: #7b7a7d;
+$gray-4: #a5a5a6;
+$gray-3: #bbbbbc;
+$gray-2: #d1d0d2;
+$gray-1: #e8e7e8;
+$white: white;
+
+/* feedback */
+$color-success: #88c459;
+$color-error: #f5414f;
+$color-warning: #ffd137;
+
+/* typography */
+$color-text: $gray-10;
+$color-text-heading: $black;
+$color-text-subtle: $gray-6;
+$color-link: $primary;
+$color-link-visited: $secondary;
+$color-mark: $gray-6;
+$color-blockquote-border: $gray-2;
+
+// Spacing
+$space-unit: 1em;
+$space-xxs: 0.25 * $space-unit;
+$space-xs: 0.5 * $space-unit;
+$space-sm: 0.75 * $space-unit;
+$space-md: 1.25 * $space-unit;
+$space-lg: 2 * $space-unit;
+$space-xl: 3.25 * $space-unit;
+$space-xxl: 5.25 * $space-unit;
+
+/* component padding */
+$component-padding: $space-sm;
+
+@include breakpoint(md) {
+  :root {
+    $space-unit: 1.25em;
+    $component-padding: $space-md;
+  }
+}

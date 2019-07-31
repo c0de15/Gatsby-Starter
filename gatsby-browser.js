@@ -4,4 +4,9 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
+// Apply Global Styles
+import './src/styles/reset.scss'
+import './src/styles/fonts.scss'
+import './src/styles/mixins.scss'
+import './src/styles/variables.scss'
+import './src/styles/main.scss'

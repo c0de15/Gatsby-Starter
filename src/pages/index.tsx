@@ -1,9 +1,9 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 
-import Image from '../components/image'
-import Layout from '../components/layout/layout'
-import SEO from '../components/seo'
+import Image from '../components/Image'
+import Layout from '../components/Layout/Layout'
+import SEO from '../components/Seo'
 
 const IndexPage = () => (
   <Layout>
